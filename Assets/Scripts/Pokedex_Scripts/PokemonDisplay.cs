@@ -33,9 +33,14 @@ public class PokemonDisplay : MonoBehaviour
     public int currentGroupId = 0; //private
     public int maxGroupId = 19;
 
-    //public string fetchedName;
-    //public string fetchedDescription;
-    //public Sprite fetchedImage;
+    public string fetchedName;
+    public string fetchedDescription;
+    public Sprite fetchedImage;
+    public string[] fetchedTypes;
+
+    //when select slot, all loaded = false
+    //if loaded all:
+    //activate main view group
 
     [SerializeField] public Dictionary<string, Color> pokemonTypePanelColors = new Dictionary<string, Color>()
     {
@@ -70,6 +75,40 @@ public class PokemonDisplay : MonoBehaviour
         UpdateSlotImages(currentPokemonId.ToString());
         UpdateGroupIndicator();
     }
+
+    void Update()
+    {
+        if (
+            fetchedName != null &&
+            fetchedDescription != null &&
+            fetchedImage != null &&
+            fetchedTypes[0] != "" &&
+            fetchedTypes[1] != ""
+        )
+        {
+            pokemonName.text = fetchedName;
+            pokemonImage.sprite = fetchedImage;
+            pokemonDescription.text = fetchedDescription;
+            pokemonsTypeDisplays[0].pokemonType.text = fetchedTypes[0];
+            pokemonsTypeDisplays[1].pokemonType.text = fetchedTypes[1];
+
+            /*
+            Debug.Log(fetchedName);
+            Debug.Log(fetchedImage);
+            Debug.Log(fetchedDescription);
+            Debug.Log(fetchedTypes[0]);
+            Debug.Log(fetchedTypes[1]);
+            */
+            
+            fetchedName = null;
+            fetchedImage = null;
+            fetchedDescription = null;
+            fetchedTypes[0] = "";
+            fetchedTypes[1] = "";
+        }
+        
+    }
+
 
     public void NextPokemon()
     {
@@ -226,7 +265,8 @@ public class PokemonDisplay : MonoBehaviour
 
     private void UpdatePokemonName(PokemonData pokemonData)
     {
-        pokemonName.text = "#" + pokemonData.id + " " + pokemonData.name.ToUpper();
+        //pokemonName.text = "#" + pokemonData.id + " " + pokemonData.name.ToUpper();
+        fetchedName = "#" + pokemonData.id + " " + pokemonData.name.ToUpper();
     }
 
     private void UpdatePokemonImage(PokemonData pokemonData)
@@ -238,7 +278,8 @@ public class PokemonDisplay : MonoBehaviour
 
         pokemonLoader.FetchImage(imageUrl, (sprite) => 
         {
-            pokemonImage.sprite = sprite;
+            //pokemonImage.sprite = sprite;
+            fetchedImage = sprite;
         });
     }
 
@@ -246,7 +287,8 @@ public class PokemonDisplay : MonoBehaviour
     {
         pokemonLoader.FetchPokemonDescription(pokemonId, (description) =>
         {
-            pokemonDescription.text = description;
+            //pokemonDescription.text = description;
+            fetchedDescription = description;
         });
     }
 
@@ -262,7 +304,8 @@ public class PokemonDisplay : MonoBehaviour
         {
             if (pokemonData.types.Length < 2)
             {
-                pokemonsTypeDisplays[1].pokemonType.text = "";
+                //pokemonsTypeDisplays[1].pokemonType.text = "";
+                fetchedTypes[1] = " ";
                 pokemonsTypeDisplays[1].pokemonTypePanel.gameObject.SetActive(false);
             } else
             {
@@ -277,7 +320,8 @@ public class PokemonDisplay : MonoBehaviour
 
                 string textType = pokemonData.types[i].type.name.ToUpper();
 
-                pokemonsTypeDisplays[i].pokemonType.text = textType;
+                //pokemonsTypeDisplays[i].pokemonType.text = textType;
+                fetchedTypes[i] = textType;
                 pokemonsTypeDisplays[i].pokemonTypePanel.color = pokemonTypePanelColors[textType];
             }
 
