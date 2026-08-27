@@ -25,6 +25,7 @@ public class PokemonDisplay : MonoBehaviour
     public PokemonTypeDisplay[] pokemonsTypeDisplays;
     public CanvasGroup slotsCanvasGroup;
     public CanvasGroup previousAndNextCanvasGroup;
+    public Animator mainDisplayAnim;
 
     [Header("Dependencies")]
     public PokemonLoader pokemonLoader;
@@ -37,6 +38,11 @@ public class PokemonDisplay : MonoBehaviour
     public string fetchedDescription;
     public Sprite fetchedImage;
     public string[] fetchedTypes;
+
+    //Coroutine
+    public Coroutine mainDisplayRoutine;
+    public bool isFirstDisplay = true;
+    //public WaitForSeconds waitTime; set in Awake()
 
     //when select slot, all loaded = false
     //if loaded all:
@@ -71,9 +77,13 @@ public class PokemonDisplay : MonoBehaviour
 
     void Start()
     {
+        //CreateMainDisplayCoroutine(); //Coroutine Test
+
         UpdateMainDisplay(currentPokemonId.ToString());
         UpdateSlotImages(currentPokemonId.ToString());
         UpdateGroupIndicator();
+
+        mainDisplayAnim.SetBool("isOpen", true);
     }
 
     void Update()
@@ -91,7 +101,8 @@ public class PokemonDisplay : MonoBehaviour
             pokemonDescription.text = fetchedDescription;
             pokemonsTypeDisplays[0].pokemonType.text = fetchedTypes[0];
             pokemonsTypeDisplays[1].pokemonType.text = fetchedTypes[1];
-
+            
+            CreateMainDisplayCoroutine();
             /*
             Debug.Log(fetchedName);
             Debug.Log(fetchedImage);
@@ -99,12 +110,6 @@ public class PokemonDisplay : MonoBehaviour
             Debug.Log(fetchedTypes[0]);
             Debug.Log(fetchedTypes[1]);
             */
-            
-            fetchedName = null;
-            fetchedImage = null;
-            fetchedDescription = null;
-            fetchedTypes[0] = "";
-            fetchedTypes[1] = "";
         }
         
     }
@@ -251,7 +256,7 @@ public class PokemonDisplay : MonoBehaviour
             UpdatePokemonImage(pokemonData);
             UpdatePokemonDescription(pokemonId);
 
-            UpdatePokemonTypes(pokemonId); //Test
+            UpdatePokemonTypes(pokemonId);
         });
     }
 
@@ -309,7 +314,7 @@ public class PokemonDisplay : MonoBehaviour
                 pokemonsTypeDisplays[1].pokemonTypePanel.gameObject.SetActive(false);
             } else
             {
-                pokemonsTypeDisplays[1].pokemonTypePanel.gameObject.SetActive(true);
+                //pokemonsTypeDisplays[1].pokemonTypePanel.gameObject.SetActive(true); TEMP
             }
 
             //string textTypes = "";
@@ -323,10 +328,66 @@ public class PokemonDisplay : MonoBehaviour
                 //pokemonsTypeDisplays[i].pokemonType.text = textType;
                 fetchedTypes[i] = textType;
                 pokemonsTypeDisplays[i].pokemonTypePanel.color = pokemonTypePanelColors[textType];
+                pokemonsTypeDisplays[i].pokemonTypePanel.gameObject.SetActive(false);
             }
 
             Invoke(nameof(SetSlotsInteractableToTrue), 1f);
         });
+    }
+
+    private void CreateMainDisplayCoroutine()
+    {
+        if (mainDisplayRoutine != null)
+        {
+            StopCoroutine(mainDisplayRoutine);
+        }
+
+        mainDisplayRoutine = StartCoroutine(MainDisplayRoutine());
+    }
+
+    private IEnumerator MainDisplayRoutine()
+    {
+        string _pokemonName = fetchedName;
+        Sprite _pokemonImage = fetchedImage;
+        string _pokemonDescription = fetchedDescription;
+        string[] _fetchedTypes = new string[2];
+        _fetchedTypes[0] = fetchedTypes[0];
+        _fetchedTypes[1] = fetchedTypes[1];
+
+        fetchedName = null;
+        fetchedImage = null;
+        fetchedDescription = null;
+        fetchedTypes[0] = "";
+        fetchedTypes[1] = "";
+
+        if (isFirstDisplay)
+        {
+            mainDisplayAnim.SetBool("isOpen", true);
+            isFirstDisplay = false;
+        } else
+        {
+            pokemonName.text = "";
+            pokemonImage.sprite = transparent;
+            pokemonDescription.text = "";
+            pokemonsTypeDisplays[0].pokemonType.text = "";
+            pokemonsTypeDisplays[1].pokemonType.text = "";
+
+            mainDisplayAnim.SetTrigger("Reopen");
+        }
+
+        yield return new WaitForSeconds(0.25f);
+        if (_fetchedTypes[1] != " ") pokemonsTypeDisplays[1].pokemonTypePanel.gameObject.SetActive(true);
+        pokemonsTypeDisplays[0].pokemonTypePanel.gameObject.SetActive(true);
+
+        yield return new WaitForSeconds(0.25f);
+
+        pokemonName.text = _pokemonName;
+        pokemonImage.sprite = _pokemonImage;
+        pokemonDescription.text = _pokemonDescription;
+        pokemonsTypeDisplays[0].pokemonType.text = _fetchedTypes[0];
+        pokemonsTypeDisplays[1].pokemonType.text = _fetchedTypes[1];
+
+        Debug.Log(_fetchedTypes[0] + " " + _fetchedTypes[1]);
     }
 }
 

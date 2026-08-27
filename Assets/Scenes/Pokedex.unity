@@ -133,6 +133,78 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 143fc6f30fec84945b9066740482a217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &42744721
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 42744722}
+  - component: {fileID: 42744723}
+  - component: {fileID: 42744724}
+  m_Layer: 5
+  m_Name: PokemonMainDisplay
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &42744722
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 42744721}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 92914662}
+  - {fileID: 1844441403}
+  - {fileID: 1849715242}
+  - {fileID: 1218871311}
+  m_Father: {fileID: 1275946285}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &42744723
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 42744721}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 700e086718bfad84b93a0d6bac349e5e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!225 &42744724
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 42744721}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1001 &52985763
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -144,6 +216,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SlotButton (47)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1849715244}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2669664774175013227, guid: ba14738a20777b8419ee6db47fea6d50,
         type: 3}
@@ -274,6 +376,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SlotButton (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1849715244}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2669664774175013227, guid: ba14738a20777b8419ee6db47fea6d50,
         type: 3}
@@ -650,19 +782,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 92914661}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1934403429}
-  - {fileID: 434317536}
-  m_Father: {fileID: 1275946285}
-  m_RootOrder: 1
+  m_Father: {fileID: 42744722}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 228.06, y: 227.43}
-  m_SizeDelta: {x: 456.12247, y: 50}
+  m_SizeDelta: {x: 456.1225, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &92914663
 MonoBehaviour:
@@ -712,6 +843,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SlotButton (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1849715244}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2669664774175013227, guid: ba14738a20777b8419ee6db47fea6d50,
         type: 3}
@@ -843,6 +1004,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlotButton (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1849715244}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2669664774175013227, guid: ba14738a20777b8419ee6db47fea6d50,
         type: 3}
       propertyPath: m_Pivot.x
@@ -972,6 +1163,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SlotButton (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1849715244}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2669664774175013227, guid: ba14738a20777b8419ee6db47fea6d50,
         type: 3}
@@ -1103,6 +1324,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlotButton (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1849715244}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2669664774175013227, guid: ba14738a20777b8419ee6db47fea6d50,
         type: 3}
       propertyPath: m_Pivot.x
@@ -1232,6 +1483,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SlotButton (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1849715244}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2669664774175013227, guid: ba14738a20777b8419ee6db47fea6d50,
         type: 3}
@@ -1386,6 +1667,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SlotButton (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1849715244}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2669664774175013227, guid: ba14738a20777b8419ee6db47fea6d50,
         type: 3}
@@ -1624,6 +1935,7 @@ MonoBehaviour:
     pokemonType: {fileID: 798671991}
   slotsCanvasGroup: {fileID: 558207018}
   previousAndNextCanvasGroup: {fileID: 285888676}
+  mainDisplayAnim: {fileID: 42744723}
   pokemonLoader: {fileID: 224346059}
   currentPokemonId: 1
   currentGroupId: 0
@@ -1634,6 +1946,7 @@ MonoBehaviour:
   fetchedTypes:
   - 
   - 
+  isFirstDisplay: 1
 --- !u!1001 &261079948
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1645,6 +1958,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SlotButton (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1849715244}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2669664774175013227, guid: ba14738a20777b8419ee6db47fea6d50,
         type: 3}
@@ -1807,7 +2150,7 @@ RectTransform:
   - {fileID: 2058724903}
   - {fileID: 1338610673}
   m_Father: {fileID: 1275946285}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1861,6 +2204,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SlotButton (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1849715244}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2669664774175013227, guid: ba14738a20777b8419ee6db47fea6d50,
         type: 3}
@@ -2003,6 +2376,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SlotButton (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1849715244}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2669664774175013227, guid: ba14738a20777b8419ee6db47fea6d50,
         type: 3}
@@ -2151,12 +2554,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 92914662}
+  m_Father: {fileID: 1374143542}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 222.94003, y: 0}
+  m_AnchoredPosition: {x: 451, y: 227.42998}
   m_SizeDelta: {x: 90, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &434317537
@@ -2204,6 +2607,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SlotButton (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1849715244}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2669664774175013227, guid: ba14738a20777b8419ee6db47fea6d50,
         type: 3}
@@ -2340,6 +2773,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SlotButton (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1849715244}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2669664774175013227, guid: ba14738a20777b8419ee6db47fea6d50,
         type: 3}
@@ -2482,6 +2945,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SlotButton (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1849715244}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2669664774175013227, guid: ba14738a20777b8419ee6db47fea6d50,
         type: 3}
@@ -2899,6 +3392,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlotButton (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1849715244}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2669664774175013227, guid: ba14738a20777b8419ee6db47fea6d50,
         type: 3}
       propertyPath: m_Pivot.x
@@ -3028,6 +3551,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SlotButton (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1849715244}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2669664774175013227, guid: ba14738a20777b8419ee6db47fea6d50,
         type: 3}
@@ -3159,6 +3712,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlotButton (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1849715244}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2669664774175013227, guid: ba14738a20777b8419ee6db47fea6d50,
         type: 3}
       propertyPath: m_Pivot.x
@@ -3288,6 +3871,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SlotButton (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1849715244}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2669664774175013227, guid: ba14738a20777b8419ee6db47fea6d50,
         type: 3}
@@ -3564,6 +4177,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlotButton (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1849715244}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2669664774175013227, guid: ba14738a20777b8419ee6db47fea6d50,
         type: 3}
       propertyPath: m_Pivot.x
@@ -3717,6 +4360,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SlotButton (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1849715244}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2669664774175013227, guid: ba14738a20777b8419ee6db47fea6d50,
         type: 3}
@@ -3884,6 +4557,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlotButton (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1849715244}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2669664774175013227, guid: ba14738a20777b8419ee6db47fea6d50,
         type: 3}
       propertyPath: m_Pivot.x
@@ -4049,6 +4752,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SlotButton (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1849715244}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2669664774175013227, guid: ba14738a20777b8419ee6db47fea6d50,
         type: 3}
@@ -4261,7 +4994,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1570750968}
   m_HandleRect: {fileID: 1570750967}
   m_Direction: 2
-  m_Value: 1.0000002
+  m_Value: 1
   m_Size: 0.5833758
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -4351,6 +5084,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SlotButton (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1849715244}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2669664774175013227, guid: ba14738a20777b8419ee6db47fea6d50,
         type: 3}
@@ -4564,6 +5327,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SlotButton (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1849715244}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2669664774175013227, guid: ba14738a20777b8419ee6db47fea6d50,
         type: 3}
@@ -4853,6 +5646,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlotButton (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1849715244}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2669664774175013227, guid: ba14738a20777b8419ee6db47fea6d50,
         type: 3}
       propertyPath: m_Pivot.x
@@ -4996,13 +5819,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1218871310}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1902233571}
-  m_Father: {fileID: 1275946285}
-  m_RootOrder: 4
+  m_Father: {fileID: 42744722}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5057,6 +5880,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SlotButton (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1849715244}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2669664774175013227, guid: ba14738a20777b8419ee6db47fea6d50,
         type: 3}
@@ -5199,6 +6052,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SlotButton (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1849715244}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2669664774175013227, guid: ba14738a20777b8419ee6db47fea6d50,
         type: 3}
@@ -5371,13 +6254,10 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1844441403}
-  - {fileID: 92914662}
   - {fileID: 1684594479}
   - {fileID: 285888675}
-  - {fileID: 1218871311}
   - {fileID: 1658442824}
-  - {fileID: 1849715242}
+  - {fileID: 42744722}
   m_Father: {fileID: 1374143542}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5506,6 +6386,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SlotButton (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1849715244}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2669664774175013227, guid: ba14738a20777b8419ee6db47fea6d50,
         type: 3}
@@ -5897,6 +6807,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1275946285}
+  - {fileID: 434317536}
   - {fileID: 1948163299}
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -5977,6 +6888,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SlotButton (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1849715244}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2669664774175013227, guid: ba14738a20777b8419ee6db47fea6d50,
         type: 3}
@@ -6156,6 +7097,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlotButton (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1849715244}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2669664774175013227, guid: ba14738a20777b8419ee6db47fea6d50,
         type: 3}
       propertyPath: m_Pivot.x
@@ -6286,6 +7257,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlotButton (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1849715244}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2669664774175013227, guid: ba14738a20777b8419ee6db47fea6d50,
         type: 3}
       propertyPath: m_Pivot.x
@@ -6415,6 +7416,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SlotButton (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1849715244}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2669664774175013227, guid: ba14738a20777b8419ee6db47fea6d50,
         type: 3}
@@ -6569,6 +7600,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SlotButton (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1849715244}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2669664774175013227, guid: ba14738a20777b8419ee6db47fea6d50,
         type: 3}
@@ -6930,7 +7991,7 @@ RectTransform:
   m_Children:
   - {fileID: 1205763812}
   m_Father: {fileID: 1275946285}
-  m_RootOrder: 5
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7007,7 +8068,7 @@ RectTransform:
   - {fileID: 1593646957}
   - {fileID: 1051468675}
   m_Father: {fileID: 1275946285}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7092,6 +8153,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SlotButton (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1849715244}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2669664774175013227, guid: ba14738a20777b8419ee6db47fea6d50,
         type: 3}
@@ -7247,6 +8338,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlotButton (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1849715244}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2669664774175013227, guid: ba14738a20777b8419ee6db47fea6d50,
         type: 3}
       propertyPath: m_Pivot.x
@@ -7376,6 +8497,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SlotButton (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1849715244}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2669664774175013227, guid: ba14738a20777b8419ee6db47fea6d50,
         type: 3}
@@ -7519,6 +8670,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlotButton (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1849715244}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2669664774175013227, guid: ba14738a20777b8419ee6db47fea6d50,
         type: 3}
       propertyPath: m_Pivot.x
@@ -7649,6 +8830,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlotButton (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1849715244}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2669664774175013227, guid: ba14738a20777b8419ee6db47fea6d50,
         type: 3}
       propertyPath: m_Pivot.x
@@ -7778,6 +8989,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SlotButton (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1849715244}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2669664774175013227, guid: ba14738a20777b8419ee6db47fea6d50,
         type: 3}
@@ -7934,12 +9175,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1844441402}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1275946285}
-  m_RootOrder: 0
+  m_Father: {fileID: 42744722}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7993,6 +9234,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1849715242}
   - component: {fileID: 1849715243}
+  - component: {fileID: 1849715244}
   m_Layer: 5
   m_Name: PokemonTypes
   m_TagString: Untagged
@@ -8007,14 +9249,14 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1849715241}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 61301253}
   - {fileID: 1282296069}
-  m_Father: {fileID: 1275946285}
-  m_RootOrder: 6
+  m_Father: {fileID: 42744722}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8046,6 +9288,18 @@ MonoBehaviour:
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
+--- !u!225 &1849715244
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1849715241}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1902233570
 GameObject:
   m_ObjectHideFlags: 0
@@ -8191,6 +9445,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlotButton (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1849715244}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2669664774175013227, guid: ba14738a20777b8419ee6db47fea6d50,
         type: 3}
       propertyPath: m_Pivot.x
@@ -8320,6 +9604,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SlotButton (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1849715244}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2669664774175013227, guid: ba14738a20777b8419ee6db47fea6d50,
         type: 3}
@@ -8471,10 +9785,10 @@ RectTransform:
   m_Father: {fileID: 92914662}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -12.8, y: 2.8}
-  m_SizeDelta: {x: 413.72626, y: 50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -10.899918, y: 4}
+  m_SizeDelta: {x: -40.20523, y: -0.000002026558}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1934403430
 MonoBehaviour:
@@ -8539,9 +9853,9 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_enableWordWrapping: 0
   m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
+  m_overflowMode: 3
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
@@ -8584,6 +9898,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SlotButton (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1849715244}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2669664774175013227, guid: ba14738a20777b8419ee6db47fea6d50,
         type: 3}
@@ -8733,7 +10077,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1374143542}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1948163300
 MonoBehaviour:
@@ -8909,6 +10253,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlotButton (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1849715244}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2669664774175013227, guid: ba14738a20777b8419ee6db47fea6d50,
         type: 3}
       propertyPath: m_Pivot.x
@@ -9039,6 +10413,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlotButton (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1849715244}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2669664774175013227, guid: ba14738a20777b8419ee6db47fea6d50,
         type: 3}
       propertyPath: m_Pivot.x
@@ -9168,6 +10572,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SlotButton (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1849715244}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2669664774175013227, guid: ba14738a20777b8419ee6db47fea6d50,
         type: 3}
@@ -9310,6 +10744,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SlotButton (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1849715244}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2669664774175013227, guid: ba14738a20777b8419ee6db47fea6d50,
         type: 3}
@@ -9459,6 +10923,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlotButton (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1849715244}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2669664774175013227, guid: ba14738a20777b8419ee6db47fea6d50,
         type: 3}
       propertyPath: m_Pivot.x
@@ -9600,6 +11094,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SlotButton (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1849715244}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2669664774175013227, guid: ba14738a20777b8419ee6db47fea6d50,
         type: 3}
@@ -9755,6 +11279,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlotButton (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1849715244}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2669664774175013227, guid: ba14738a20777b8419ee6db47fea6d50,
         type: 3}
       propertyPath: m_Pivot.x
@@ -9884,6 +11438,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SlotButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1849715244}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669664774175013226, guid: ba14738a20777b8419ee6db47fea6d50,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2669664774175013227, guid: ba14738a20777b8419ee6db47fea6d50,
         type: 3}
