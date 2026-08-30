@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Pokedex.unity
+    guid: 87a858ce78bc0184293adc4b766d5bf4
   m_configObjects: {}
